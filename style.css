@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+.tabela {
+    width: 600px;
+}
+
+table thead {
+    background-color: #CCC;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tbody > tr:hover {
+    background-color: #EEE;
+}
+
+tbody > tr:nth-child(even){
+    background-color: aqua;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+label {
+    margin: 10px 0px;
+}
+
+input {
+    width: 500px;
+    padding: 10px;
+    margin: 5px 0px;
+    font-size: 14px;
+    outline: 0px;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+    margin-top: 10px;
+    outline: 0px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-interno {
+    background-color: #999;
+    width: 20rem;
+    height: 20rem;
+}
+
+header {
+    background-color: aqua;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    background-color: blueviolet;
+    height: 10vh;
+}
+
+@media (min-width:320px) and (max-width:414px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

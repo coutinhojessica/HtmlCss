@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formatando Formulário</title>
+</head>
+<body>
+
+    <form action="dados.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <label for="e-mail">
+                E-mail:<br/>
+                <input type="email" name="e-mail" id="e-mail" pattern="">
+            </label>
+                <br/>
+                <label for="">
+                    Senha: <br/>
+                    <input type="password" name="senha" id="">
+                </label> <br/>
+                <label for="">
+                    Telefone: <br/>
+                    <input type="tel" name="telefone" id="" required minlength="11" maxlength="11">
+                </label>
+                <br/>
+                <label for="">
+                    Senha: <br/>
+                    <input type="file" name="photo" id="photo" accept="image/*">
+                </label> 
+                <br/>
+                <textarea name="descricao" id=""></textarea>
+                <br/>
+                <button>Enviar</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
